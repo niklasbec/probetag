@@ -111,8 +111,14 @@ function Jobs() {
                if(checkedValues.includes(curr.category)) {
                     jobDataChecked.push(curr)
                }
-               setJobData(jobDataChecked)
-           })
+               if(curr.category.split(" ").length > 1) {
+                   let cats = curr.category.split(" ")
+                   if(checkedValues.includes(cats[0]) || checkedValues.includes(cats[1])) {
+                       jobDataChecked.push(curr)
+                   }
+               }
+            })
+            setJobData(jobDataChecked)
         }
 
     }, [searchValue, plzValue, checkedValues])

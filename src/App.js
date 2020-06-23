@@ -1,19 +1,16 @@
 import React from 'react';
-
+import { Route } from "react-router-dom"
 import './App.css';
+
+/*Component imports */
+import Jobs from './components/Jobs';
+import Home from "./components/Home"
 
 function App() {
   return (
     <div className="App">
-      <h1 className="main-heading">Ihre Karriere bei AGRAVIS</h1>
-      <div className="job-search">
-        <div className="job-postings">
-
-        </div>
-        <div className="filter-pannel">
-          <input className="text-search-field" placeholder="Jobangebote durchsuchen" />
-        </div>
-      </div>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/jobs" component={Jobs} />
     </div>
   );
 }

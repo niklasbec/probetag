@@ -25,7 +25,7 @@ const data = [
     city: "Haßloch",
     date: "22. Juni 2020",
     plz: "67454",
-    category: 3,
+    category: categories[3],
     desc: "Einzelhandelskaufmann",
   },
   {
@@ -34,7 +34,7 @@ const data = [
     city: "Warburg-Hohenwepel",
     date: "22. Juni 2020",
     plz: "34414",
-    category: 3,
+    category: categories[3],
     desc: "Auszubildender zum Kaufmann",
   },
   {
@@ -43,7 +43,7 @@ const data = [
     city: "Aschersleben",
     date: "22. Juni 2020",
     plz: "06449",
-    category: 3,
+    category: categories[3],
     desc: "Käufmännischer Mitarbeiter",
   },
   {
@@ -53,7 +53,7 @@ const data = [
     city: "Hannover",
     date: "19. Juni 2020",
     plz: "30159",
-    category: 10,
+    category: categories[8],
     desc: "Ingenieur / Techniker",
   },
   {
@@ -62,7 +62,7 @@ const data = [
     city: "Münster",
     date: "18. Juni 2020",
     plz: "48143",
-    category: 7,
+    category: categories[7],
     desc: "Sachbearbeiter",
   }, {
     title: "IT-Businesspartner (m/w/d)",
@@ -70,7 +70,7 @@ const data = [
     city: "Münster",
     date: "18. Juni 2020",
     plz: "48143",
-    category: 6,
+    category: categories[6],
     desc: "IT-Businesspartner",
   }, {
     title: "Lagermitarbeiter (m/w/d) Silo",
@@ -78,7 +78,7 @@ const data = [
     city: "Wolfhagen",
     date: "17. Juni 2020",
     plz: "34466",
-    category: 9,
+    category: categories[9],
     desc: "Lagermitarbeiter",
   },
   {
@@ -87,7 +87,7 @@ const data = [
     city: "Sundern",
     date: "17. Juni 2020",
     plz: "59846",
-    category: 12,
+    category: categories[12],
     desc: "Produktions- und Managementberater",
   },
   {
@@ -96,7 +96,7 @@ const data = [
     city: "Bülstringen",
     date: "17. Juni 2020",
     plz: "39340",
-    category: 6,
+    category: categories[6],
     desc: "Programmierer",
   },
   {
@@ -105,7 +105,7 @@ const data = [
     city: "Göttingen",
     date: "17. Juni 2020",
     plz: "37073",
-    category: 12,
+    category: categories[12],
     desc: "Anlagenmechaniker",
   },
 ];

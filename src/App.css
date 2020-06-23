@@ -40,10 +40,30 @@
 .ant-checkbox-group-item {
   width: 100%;
   text-align: left;
-  font-size: 20px !important;
+  font-size: 16px !important;
   margin-bottom: 20px !important;
 }
 
+/*Job Card styling*/
+
 .job-listing-item {
   margin-bottom: 40px;
+}
+
+.company-name {
+  float: left;
+  margin-top: -3%;
+}
+
+.location-date {
+  width: 100%;
+  display: flex;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.location {
+  margin-right: 30px;
 }

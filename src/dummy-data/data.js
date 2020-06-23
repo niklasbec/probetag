@@ -1,34 +1,116 @@
 const categories = [
-    "Agrarhandel",
-    "Baustoffhandel",
-    "Bauwesen",
-    "Einzelhandel/Raiffeisen",
-    "Energie",
-    "Futtermittel/Tierernährung",
-    "IT",
-    "Kaufmännisch/Administrativ",
-    "Landtechnik",
-    "Logistik/Transport",
-    "Personal",
-    "Pflanzenbau",
-    "Produktion",
-    "Sonstiges",
-    "Vertrieb/Marketing",
-  ];
+  "Agrarhandel",
+  "Baustoffhandel",
+  "Bauwesen",
+  "Einzelhandel/Raiffeisen",
+  "Energie",
+  "Futtermittel/Tierernährung",
+  "IT",
+  "Kaufmännisch/Administrativ",
+  "Landtechnik",
+  "Logistik/Transport",
+  "Personal",
+  "Pflanzenbau",
+  "Produktion",
+  "Sonstiges",
+  "Vertrieb/Marketing",
+];
+
+/*PLZ ALS STRING WEGEN PLZs MIT 0 VORNE*/
 
 const data = [
-    {title: "",
-    company: "",
-    city: "",
-    date: "",
-    plz: "",
-    category: 1,
-    desc: "",
-}
-]
+  {
+    title: "Einzelhandelskaufmann für den Bereich Garten und Heimtier (m/w/d)",
+    company: "AGRAVIS RAIFFEISEN-MARKT GMBH",
+    city: "Haßloch",
+    date: "22. Juni 2020",
+    plz: "67454",
+    category: 3,
+    desc: "Einzelhandelskaufmann",
+  },
+  {
+    title: "Auszubildender zum Kaufmann im Groß- und Außenhandel (m/w/d)",
+    company: "AGRAVIS KORNHAUS OSTWESTFALEN GMBH",
+    city: "Warburg-Hohenwepel",
+    date: "22. Juni 2020",
+    plz: "34414",
+    category: 3,
+    desc: "Auszubildender zum Kaufmann",
+  },
+  {
+    title: "Käufmännischer Mitarbeiter (m/w/d)",
+    company: "BARO LAGERHAUS GMBH & CO. KG",
+    city: "Aschersleben",
+    date: "22. Juni 2020",
+    plz: "06449",
+    category: 3,
+    desc: "Käufmännischer Mitarbeiter",
+  },
+  {
+    title:
+      "Ingenieur / Techniker für das Arbeitsgebiet Arbeitssicherheit und Umweltschutz (m/w/d)",
+    company: "VERAVIS GMBH",
+    city: "Hannover",
+    date: "19. Juni 2020",
+    plz: "30159",
+    category: 10,
+    desc: "Ingenieur / Techniker",
+  },
+  {
+    title: "Sachbearbeiter Raiffeisenmärkte (m/w/d)",
+    company: "AGRAVIS RAIFFEISEN AG",
+    city: "Münster",
+    date: "18. Juni 2020",
+    plz: "48143",
+    category: 7,
+    desc: "Sachbearbeiter",
+  }, {
+    title: "IT-Businesspartner (m/w/d)",
+    company: "AGRAVIS RAIFFEISEN AG",
+    city: "Münster",
+    date: "18. Juni 2020",
+    plz: "48143",
+    category: 6,
+    desc: "IT-Businesspartner",
+  }, {
+    title: "Lagermitarbeiter (m/w/d) Silo",
+    company: "RÖRIG/HARTIG U. CO. LANDWARENHANDEL GMBH",
+    city: "Wolfhagen",
+    date: "17. Juni 2020",
+    plz: "34466",
+    category: 9,
+    desc: "Lagermitarbeiter",
+  },
+  {
+    title: "Produktions- und Managementberater Rind im Außendienst (m/w/d)",
+    company: "AGRAVIS MISCHFUTTER WEST GMBH",
+    city: "Sundern",
+    date: "17. Juni 2020",
+    plz: "59846",
+    category: 12,
+    desc: "Produktions- und Managementberater",
+  },
+  {
+    title: "Programmierer (m/w/d)",
+    company: "BARO LAGERHAUS GMBH & CO. KG",
+    city: "Bülstringen",
+    date: "17. Juni 2020",
+    plz: "39340",
+    category: 6,
+    desc: "Programmierer",
+  },
+  {
+    title: "Anlagenmechaniker (m/w/d) SHK",
+    company: "PIENING HAUSTECHNIK UND ENERGIESERVICE GMBH",
+    city: "Göttingen",
+    date: "17. Juni 2020",
+    plz: "37073",
+    category: 12,
+    desc: "Anlagenmechaniker",
+  },
+];
 
-exports.data = data
-
+exports.data = data;
 
 /*
 0 "Agrarhandel",

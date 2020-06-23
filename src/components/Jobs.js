@@ -62,7 +62,6 @@ function Jobs() {
         jobCategories.forEach(curr => {
             if(!existingCategories.includes(curr.value)) {
                 curr.disabled = true
-                console.log(existingCategories, curr.value);
             }
         })
     }, [])
@@ -70,7 +69,7 @@ function Jobs() {
     useEffect(() => {
         let newJobData = []
         data.forEach(curr => {
-            if((curr.title.toLowerCase().includes(searchValue) && (curr.plz.toLowerCase().includes(plzValue) || curr.city.toLowerCase().includes(plzValue))) || (curr.company.toLowerCase().includes(searchValue) && curr.plz.includes(plzValue))) {
+            if((curr.city.toLowerCase().includes(plzValue) || curr.plz.toLowerCase().includes(plzValue)) && (curr.title.toLowerCase().includes(searchValue) || curr.company.toLowerCase().includes(searchValue))) {
                 newJobData.push(curr)
             }
         })
@@ -79,7 +78,7 @@ function Jobs() {
             setJobData(newJobData)
         } else {
             let jobDataChecked = []
-           newJobData.forEach((curr, index) => {
+           newJobData.forEach((curr) => {
                if(checkedValues.includes(curr.category)) {
                     jobDataChecked.push(curr)
                }

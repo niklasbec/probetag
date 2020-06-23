@@ -19,15 +19,15 @@ const categories = [
 /*PLZ ALS STRING WEGEN PLZs MIT 0 VORNE*/
 
 const data = [
-    {
-        title: "Einzelhandelskaufmann für den Bereich Garten und Heimtier (m/w/d)",
-        company: "AGRAVIS RAIFFEISEN-MARKT GMBH",
-        city: "Haßloch",
-        date: "22. Juni 2020",
-        plz: "67454",
-        category: `${categories[0]} ${categories[1]}`,
-        desc: "Einzelhandelskaufmann",
-      },
+    // {
+    //     title: "Einzelhandelskaufmann für den Bereich Garten und Heimtier (m/w/d)",
+    //     company: "AGRAVIS RAIFFEISEN-MARKT GMBH",
+    //     city: "Haßloch",
+    //     date: "22. Juni 2020",
+    //     plz: "67454",
+    //     category: `${categories[0]} ${categories[1]}`,
+    //     desc: "Einzelhandelskaufmann",
+    //   },
   {
     title: "Einzelhandelskaufmann für den Bereich Garten und Heimtier (m/w/d)",
     company: "AGRAVIS RAIFFEISEN-MARKT GMBH",

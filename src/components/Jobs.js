@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Route } from "react-router-dom"
 import { Divider } from "antd";
 import { Card } from "antd";
 import "antd/dist/antd.css";
@@ -8,7 +7,6 @@ import { Input } from "antd";
 import { CalendarOutlined, EnvironmentOutlined } from "@ant-design/icons";
 /*Data import*/
 import { data } from "../dummy-data/data";
-import JobListing from "./JobListing";
 
 const { Search } = Input;
 
@@ -50,7 +48,6 @@ function Jobs() {
     const [searchValue, setSearchValue] = useState("")
     const [plzValue, setPlzValue] = useState("")
     const [existingCats, setExistingCats] = useState([])
-    const [clickedJobData, setClickedJobData] = useState(null)
 
     /*handles what happens when a checkbox is clicked*/
 
@@ -64,10 +61,16 @@ function Jobs() {
         let existingCategories = []
         data.forEach(curr => {
             if(!existingCategories[curr.category]) {
-                existingCategories.push(curr.category)
+                if(curr.category.split(" ").length > 1) {
+                    let cats = curr.category.split(" ")
+                    cats.forEach(curr => {
+                        existingCategories.push(curr)
+                    })
+                } else {
+                    existingCategories.push(curr.category)
+                }
             }
         })
-
         setExistingCats(existingCategories)
         
         jobCategories.forEach(curr => {
@@ -116,13 +119,12 @@ function Jobs() {
 
   return (
     <div className="jobs">
-    <Route path="/jobs/:id" render={(props) => (<JobListing state={clickedJobData} {...props}/> )}/>
       <h1 className="main-heading">Ihre Karriere bei AGRAVIS</h1>
       <div className="job-search">
         <div className="job-postings">
           {jobData.map((curr, index) => {
             return (
-              <div className="job-listing-item" key={index} onClick={() => {setClickedJobData(curr)}}>
+              <div className="job-listing-item" key={index}>
                 <Card title={curr.title}>
                   <p className="company-name">{curr.company}</p>
                   <div className="location-date">

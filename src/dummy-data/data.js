@@ -25,7 +25,7 @@ const data = [
     //     city: "Haßloch",
     //     date: "22. Juni 2020",
     //     plz: "67454",
-    //     category: categories[0],
+    //     category: `${categories[0]} ${categories[1]}`,
     //     desc: "Einzelhandelskaufmann",
     //   },
   {

@@ -26,16 +26,24 @@
 
 .job-postings {
   width: 65%;
-  background-color: red;
-  height: 600px;
 }
 
 .filter-pannel {
   width: 30%;
-  height: 600px;
 }
 
 .category-heading {
   float: left;
   font-size: 20px;
+}
+
+.ant-checkbox-group-item {
+  width: 100%;
+  text-align: left;
+  font-size: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.job-listing-item {
+  margin-bottom: 40px;
 }
